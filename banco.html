@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>El 7 de Marcia - Banco de Preguntas</title>
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800&display=swap" rel="stylesheet">
+
+    <!--stylesheets-->
+    <link href="Stylesheets/main.css" rel="stylesheet">
+    <link href="Stylesheets/colors.css" rel="stylesheet">
+
+    <!--Scripts-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="Scripts/jquery.js"></script>
+    <script src="Scripts/animations.js"></script>
+    <script src="Scripts/load.js"></script>
+    <script src="Scripts/con.js"></script>
+
+  </head>
+  <body>
+    <span class="version">Alpha 1.0</span>
+    <div class="pageTitle">
+      <a href="index.html">Inicio</a>
+      <span class="t1">El 7 de Marcia</span>
+      <span class="t2">Banco de Preguntas de Matemática</span>
+    </div>
+
+    <section class="container sideBar">
+      <section class="filtros">
+        <h3>Filtros</h3>
+        <div class="prueba">
+          <h4>Prueba</h4>
+          <a onclick="filter('P1')" class="P1">Paper 1</a>
+          <a onclick="filter('P2')" class="P2">Paper 2</a>
+        </div>
+        <div class="tema">
+          <h4>Tema</h4>
+          <a><div onclick="filter('T1')" class="T1">Algebra</div></a>
+          <a><div onclick="filter('T2')" class="T2">Funciones</div></a>
+          <a><div onclick="filter('T3')" class="T3">Vectores</div></a>
+          <a><div onclick="filter('T4')" class="T4">Trigonometría</div></a>
+          <a><div onclick="filter('T5')" class="T5">Estadística</div></a>
+          <a><div onclick="filter('T6')" class="T6">Probabilidad</div></a>
+          <a><div onclick="filter('T7')" class="T7">Cálculo</div></a>
+        </div>
+        <div class="convocatoria">
+          <h4>Convocatoria</h4>
+          <a href="#">[Esto aún no existe]</a>
+        </div>
+        <div class="spacer"></div>
+      </section>
+
+      <section class="resultados">
+        <a onclick="togglePreguntas()" class="back">Filtros</a>
+        <h3>Resultados</h3>
+        <div class="resData"></div>
+        <div class="spacer"></div>
+      </section>
+    </section>
+
+    <section class="container preguntas">
+      <h3>Pregunta</h3>
+      <div class="placeholder">Seleccionar una pregunta</div>
+      <div class="imgPreguntas"></div>
+
+      <div class="spacer"></div>
+    </section>
+
+    <section class="container respuestas">
+      <h3>Respuesta</h3>
+      <div class="imgRespuestas"></div>
+      <div class="spacer"></div>
+    </section>
+
+    <section class="container formulario">
+      <h3>Formulas requeridas</h3>
+      <div class="imgFormulas">
+
+      </div>
+    </section>
+
+    <div class="actionButtons">
+      <a onclick="toggleFormulas()" class="for">Formulario</a>
+      <a onclick="toggleRespuestas()" class="res">Respuestas</a>
+    </div>
+
+  </body>
+</html>

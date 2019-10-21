@@ -1,0 +1,12 @@
+/* Color Variables */
+
+:root {
+  --lblack: rgb(70, 70, 70);
+
+  --lgray: rgb(240, 240, 240);
+  --gray: rgb(230, 230, 230);
+
+  --redGradient: linear-gradient(to right, rgb(245, 127, 77), rgb(237, 17, 83));
+
+  --blueGradient: linear-gradient(to right, rgb(33, 187, 228), rgb(23, 96, 221));
+}
